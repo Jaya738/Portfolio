@@ -1,0 +1,14 @@
+//  This File contains Typography styles.
+
+$font-family-stack: 'Inter', sans-serif !default;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+
+@mixin typography-body {
+    font-family: $font-family-stack;
+    font-size: 15px;
+    font-weight: $font-weight-normal;
+    line-height: 20px;
+    min-height: 20px;
+}

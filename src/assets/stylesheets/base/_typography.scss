@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Inter';
+    font-display: fallback;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: condensed;
+    src: local('Inter'), url('https://fonts.googleapis.com/css2?family=Inter&display=swap') format('truetype');
+}
+
+.fontweight-300,
+.fontweight-light {
+    font-weight: $font-weight-light !important;
+}
+
+.fontweight-400,
+.fontweight-normal {
+    font-weight: $font-weight-normal !important;
+}
+
+.fontweight-500,
+.fontweight-medium {
+    font-weight: $font-weight-medium !important;
+}
