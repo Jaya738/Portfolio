@@ -1,5 +1,8 @@
 import React, { FC } from "react";
-import { Button } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
+import { Banner } from "../components/Banner";
+import { Menu } from "../components/Menu";
+import { Sidebar } from "../components/Sidebar";
 
 export interface HomeProps
 {
@@ -9,11 +12,18 @@ export interface HomeProps
 export const Home: FC<HomeProps> = (props) => 
 {
     return (
-        <div className="home-page">
-            <h1>This is Home Page</h1>
-            <div>
-                <Button>Testing Bootstrap</Button>
-            </div>
-        </div>
+        <Container className="home-page" fluid>
+            <Row>
+                <Col lg="3">
+                    <Sidebar />
+                </Col>
+                <Col lg="8">
+                    <Banner />
+                </Col>
+                <Col lg="1">
+                    <Menu />
+                </Col>
+            </Row>
+        </Container>
     );
 }
