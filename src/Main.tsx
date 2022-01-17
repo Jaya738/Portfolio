@@ -5,8 +5,7 @@ export const Main: FC = () =>
 {
     return (
         <>
-            <Home />
+            <Home profileName="Hello" />
         </>
-        
     );
 }

@@ -4,12 +4,11 @@ import { Banner } from "../components/Banner";
 import { Menu } from "../components/Menu";
 import { Sidebar } from "../components/Sidebar";
 
-export interface HomeProps
-{
-    // Define your prop types here
+export interface HomeProps {
+    profileName: string;
 }
 
-export const Home: FC<HomeProps> = (props) => 
+export const Home: FC<HomeProps> = ({ profileName }) => 
 {
     return (
         <Container className="home-page" fluid>
