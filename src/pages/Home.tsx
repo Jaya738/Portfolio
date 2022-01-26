@@ -13,10 +13,10 @@ export const Home: FC<HomeProps> = ({ profileName }) =>
     return (
         <Container className="home-page" fluid>
             <Row>
-                <Col lg="3">
+                <Col lg="2">
                     <Sidebar />
                 </Col>
-                <Col lg="8">
+                <Col lg="9">
                     <Banner />
                 </Col>
                 <Col lg="1">

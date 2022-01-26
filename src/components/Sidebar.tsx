@@ -10,19 +10,9 @@ export interface SidebarProps
 export const Sidebar: FC<SidebarProps> = (props) => 
 {
     return (
-        <div className="sidebar margin-xxxl">
+        <div className="sidebar sticky-sidebar">
             <SkillsList data={skillsData}/>
             <SkillsList data={languagesData}/>
         </div>
     );
 }
-
-
-{/* <SkillsList data={skillsData} title="Hello" />
-
-({ data }) Object Destructuring
-
-= {
-    data,
-    title
-} */}
