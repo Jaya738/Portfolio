@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import model from '../assets/images/jay.png';
+import model from '../assets/images/model.png';
 
 export interface BannerProps
 {
@@ -9,7 +9,7 @@ export interface BannerProps
 export const Banner: FC<BannerProps> = (props) => 
 {
     return (
-        <div className="banner">
+        <div className="banner paddingright-xxxl">
             <div className="intro-section">
                 <b className="intro-title">
                   I'm Jaya Simha Reddy <span className="skill">Full Stack</span> Developer
