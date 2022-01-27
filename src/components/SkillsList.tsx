@@ -1,4 +1,5 @@
 import React, { FC } from 'react'
+import { ProgressBar } from 'react-bootstrap'
 import { Skills } from '../interfaces/skills'
 
 export interface SkillsListProps
@@ -13,9 +14,12 @@ const SkillsList: FC<SkillsListProps> = ({data}) => {
             <h6 className='skills-list__title'>{data.title}</h6>
             <ul className='skills-list__items'>
                 {data.skillsList.map((skillItem) => (
-                    <li className='skills-list__item'>
-                        <span className='skills-list__item__name'>{skillItem.name}</span>
-                        <span className='skills-list__item__percent'>{skillItem.percent}</span>
+                    <li className='skills-list__item flex-column'>
+                        <div className='d-flex justify-content-between'>
+                            <span className='skills-list__item__name'>{skillItem.name}</span>
+                            <span className='skills-list__item__percent'>{skillItem.percent}%</span>
+                        </div>
+                        <ProgressBar variant="success" now={skillItem.percent} />
                     </li>
                 ))}
             </ul>

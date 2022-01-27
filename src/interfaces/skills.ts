@@ -5,7 +5,7 @@ export interface Skills {
 
 export interface Skill {
     name: string,
-    percent : string
+    percent : number
 }
 
 export const skillsData = {
@@ -13,15 +13,15 @@ export const skillsData = {
     skillsList: [
         {
             "name": "HTML",
-            "percent": "90%"
+            "percent": 90
         },
         {
             "name": "Java Script",
-            "percent": "80%"
+            "percent": 80
         },
         {
             "name": "css",
-            "percent": "85%"
+            "percent": 85
         }
     ]
 }
@@ -30,15 +30,15 @@ export const languagesData = {
     skillsList: [
         {
             "name": "Telugu",
-            "percent": "80%"
+            "percent": 80
         },
         {
             "name": "English",
-            "percent": "70%"
+            "percent": 70
         },
         {
             "name": "Hindi",
-            "percent": "60%"
+            "percent": 60
         }
     ]
 }
