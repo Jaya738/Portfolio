@@ -12,6 +12,7 @@ export const Sidebar: FC<SidebarProps> = (props) =>
     return (
         <div className="sidebar sticky-sidebar">
             <SkillsList data={skillsData}/>
+            <hr />
             <SkillsList data={languagesData}/>
         </div>
     );

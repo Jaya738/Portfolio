@@ -10,7 +10,7 @@ export interface SkillsListProps
 
 const SkillsList: FC<SkillsListProps> = ({data}) => {
     return (
-        <div className='skills-list marginbottom-xxl' >
+        <div className='skills-list' >
             <h6 className='skills-list__title'>{data.title}</h6>
             <ul className='skills-list__items'>
                 {data.skillsList.map((skillItem) => (
