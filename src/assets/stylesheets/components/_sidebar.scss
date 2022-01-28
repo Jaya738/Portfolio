@@ -1,33 +1,65 @@
 .sidebar {
-    hr {
-        margin: 1.5rem 0;
+  hr {
+    margin: 1.5rem 0;
+  }
+
+  .profile {
+    text-align: center;
+    text-transform: uppercase;
+
+    .profile-pic {
+      text-align: center;
+      position: relative;
+
+      img {
+        border-radius: 50%;
+        object-fit: cover;
+        width: 120px;
+        height: 120px;
+      }
+      .active-status {
+        position: absolute;
+        bottom: 12px;
+        right: 64px;
+      }
     }
-    .skills-list {
-        &__title {
-            text-transform: uppercase;
-        }
 
-        &__items {
-            padding-left: 0px;
-        }
-
-        &__item {
-            display: flex;
-            justify-content: space-between;
-            text-decoration: none;
-
-            .progress {
-                height: 0.5rem;
-                margin-top: 0.5rem;
-                margin-bottom: 0.5rem;
-                background: none;
-                border: 0.5px solid green;
-                padding: 0.12rem;    
-            }
-
-            .progress-bar {
-                border-radius: 16px;
-            }
-        }
+    .name {
+      font-weight: bold;
+      font-size: larger;
     }
+
+    .role {
+      font-size: small;
+    }
+  }
+
+  .skills-list {
+    &__title {
+      text-transform: uppercase;
+    }
+
+    &__items {
+      padding-left: 0px;
+    }
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      text-decoration: none;
+
+      .progress {
+        height: 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        background: none;
+        border: 0.5px solid green;
+        padding: 0.12rem;
+      }
+
+      .progress-bar {
+        border-radius: 16px;
+      }
+    }
+  }
 }
